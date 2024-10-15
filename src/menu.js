@@ -10,29 +10,34 @@ export const menu = function() {
     header.className = "header";
     header.textContent = "Menu";
 
-    const subHeader1 = document.createElement("div");
+    const listContainer = document.createElement("div");
+    listContainer.className = "listContainer";
+
+    const list = document.createElement("ul");
+
+    const subHeader1 = document.createElement("li");
     subHeader1.className = "subHeader";
-    subHeader1.textContent = "Dish 1";
+    subHeader1.textContent = "Dish 1 - 10€";
 
-    const subHeader2 = document.createElement("div");
+    const subHeader2 = document.createElement("li");
     subHeader2.className = "subHeader";
-    subHeader2.textContent = "Dish 1";
+    subHeader2.textContent = "Dish 2 - 8€";
 
-    const subHeader3 = document.createElement("div");
+    const subHeader3 = document.createElement("li");
     subHeader3.className = "subHeader";
-    subHeader3.textContent = "Dish 1";
+    subHeader3.textContent = "Dish 3 - 7€";
 
-    const subHeader4 = document.createElement("div");
+    const subHeader4 = document.createElement("li");
     subHeader4.className = "subHeader";
-    subHeader4.textContent = "Dish 1";
+    subHeader4.textContent = "Dish 4 - 13€";
 
-    const subHeader5 = document.createElement("div");
+    const subHeader5 = document.createElement("li");
     subHeader5.className = "subHeader";
-    subHeader5.textContent = "Dish 1";
+    subHeader5.textContent = "Dish 5 - 3€";
 
-    const subHeader6 = document.createElement("div");
+    const subHeader6 = document.createElement("li");
     subHeader6.className = "subHeader";
-    subHeader6.textContent = "Dish 1";
+    subHeader6.textContent = "Dish 6 - 4€";
 
     const description = document.createElement("div");
     description.className = "description";
@@ -41,12 +46,14 @@ export const menu = function() {
     const content = document.querySelector("#content");
     // content.appendChild(logo);
     content.appendChild(header);
-    content.appendChild(subHeader1);
-    content.appendChild(subHeader2);
-    content.appendChild(subHeader3);
-    content.appendChild(subHeader4);
-    content.appendChild(subHeader5);
-    content.appendChild(subHeader6);
+    content.appendChild(listContainer);
+    listContainer.appendChild(list);
+    list.appendChild(subHeader1);
+    list.appendChild(subHeader2);
+    list.appendChild(subHeader3);
+    list.appendChild(subHeader4);
+    list.appendChild(subHeader5);
+    list.appendChild(subHeader6);
     content.appendChild(description);
     // logo.appendChild(logoImage);
 }
