@@ -83,6 +83,11 @@ nav #contact {
     font-weight: 800;
 }
 
+.subHeader {
+    font-size: 24px;
+    font-weight: 400;
+}
+
 .description {
     margin-top: 5px;
     font-size: 24px;
