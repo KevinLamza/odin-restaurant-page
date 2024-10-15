@@ -1,0 +1,1 @@
+export const test = "Can you see me?";
